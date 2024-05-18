@@ -1,5 +1,4 @@
 docker-compose.yml
-/conf.d/
-/cerbot/www/
-/nginx/conf.d/*
+/nginx/conf.d/
+/certbot/www/
 .env
