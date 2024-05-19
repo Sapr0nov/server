@@ -1,0 +1,3 @@
+[submodule "infrador.com"]
+	path = infrador.com
+	url = git@github.com:Sapr0nov/infrador.com.git
