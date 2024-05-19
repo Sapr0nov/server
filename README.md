@@ -43,3 +43,15 @@ Add nessessory config to nginx/conf.d
  ```bash
  docker compose up -d
 ```
+
+
+## CertBot
+Test get certificate (for example domain = infrador.ru)
+ ```bash
+docker compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ --dry-run -d infrador.ru
+```
+
+Get certificate (for example domain = infrador.ru)
+ ```bash
+docker compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ -d infrador.ru
+```

@@ -7,12 +7,11 @@ services:
       - "443:443"
       - "9001-9009:9001-9009"
     volumes:
+      - ./certbot/www/:/var/www/certbot/:ro
       - ./nginx/conf/:/etc/nginx/conf.d/:ro
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/html:/usr/share/nginx/html
-      - ./certbot/www/:/var/www/certbot/:ro
-      - /etc/ssl/dhparam.pem:/etc/ssl/dhparam.pem
     restart: always
     extra_hosts:
       - "host.docker.internal:host-gateway"
@@ -25,6 +24,8 @@ services:
     volumes:
       - ./certbot/www/:/var/www/certbot/:rw
       - ./certbot/conf/:/etc/letsencrypt/:rw
+    depends_on:
+      - nginx
 
   # infrador:
   #   build: infrador.com/docker/
