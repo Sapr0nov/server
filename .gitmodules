@@ -1,3 +1,6 @@
 [submodule "infrador.com"]
 	path = infrador.com
 	url = https://github.com/Sapr0nov/infrador.com.git
+[submodule "vdoline.com"]
+	path = vdoline.com
+	url = https://github.com/Sapr0nov/vdoline.com.git
