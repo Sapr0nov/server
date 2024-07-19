@@ -4,3 +4,6 @@
 [submodule "vdoline.com"]
 	path = vdoline.com
 	url = https://github.com/Sapr0nov/vdoline.com.git
+[submodule "note.stacksite.ru"]
+	path = note.stacksite.ru
+	url = https://github.com/Sapr0nov/note.stacksite.ru.git
